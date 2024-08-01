@@ -4,7 +4,7 @@ import {Videos } from "./";
 import { Typography } from "@mui/material";
 import { FetchfromApi } from "../utils/FetchfromApis";
 import { useParams } from "react-router-dom";
-const Feed = () => {
+const SearchFeed = () => {
   const [videos, setvideos] = useState([]);
   const {searchTerm}=useParams()
   useEffect(() => {
@@ -32,4 +32,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default SearchFeed;
